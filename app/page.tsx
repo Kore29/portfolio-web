@@ -1,5 +1,4 @@
 import React from "react";
-import Home from "@/components/Home";
 import Achievements from "@/components/Achievements";
 import AboutMe from "@/components/AboutMe";
 import Projects from "@/components/Projects";
@@ -10,11 +9,6 @@ export default function Page() {
     <>
       {/* Hero Aurora Background Section */}
       <main className="max-w-2xl md:max-w-3xl lg:max-w-[740px] mx-auto px-6 pb-24 mt-10">
-        {/* Introduction */}
-        <section className="py-20 md:py-32">
-          <Home />
-        </section>
-
       {/* Achievements */}
       <section id="achievements" className="py-12 md:py-16 scroll-mt-20">
         <h2 className="text-3xl font-bold mb-8 flex gap-x-3 items-center text-neutral-900 dark:text-white">

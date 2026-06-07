@@ -22,13 +22,6 @@ export default function RootLayout({
   return (
     <html lang="es" style={{ scrollBehavior: "smooth" }} className={cn("font-sans", inter.variable)}>
       <body className="relative min-h-screen text-black dark:text-white bg-zinc-50 dark:bg-neutral-950">
-        {/* Subtle static radial gradient background */}
-        <div
-          className="absolute top-0 bottom-0 z-[-2] min-h-screen w-full
-             bg-zinc-50 dark:bg-neutral-950
-             bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(119,153,199,0.15),rgba(255,255,255,0))]
-             dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(119,153,199,0.15),rgba(255,255,255,0))]"
-        />
         <Header />
         {children}
         <Footer id="contact" />
