@@ -4,16 +4,11 @@ import Achievements from "@/components/Achievements";
 import AboutMe from "@/components/AboutMe";
 import Projects from "@/components/Projects";
 import { TrophyIcon, PersonIcon, CodeIcon } from "@/components/Icons";
-import { AuroraBackgroundDemo } from "@/components/ui/demo";
 
 export default function Page() {
   return (
     <>
       {/* Hero Aurora Background Section */}
-      <section className="w-full relative">
-        <AuroraBackgroundDemo />
-      </section>
-
       <main className="max-w-2xl md:max-w-3xl lg:max-w-[740px] mx-auto px-6 pb-24 mt-10">
         {/* Introduction */}
         <section className="py-20 md:py-32">
