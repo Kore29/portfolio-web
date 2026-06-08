@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import React from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import VerticalNav from "@/components/layout/VerticalNav";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: "Kore's Portfolio - Web & Mobile Developer",
@@ -22,9 +23,10 @@ export default function RootLayout({
   return (
     <html lang="es" style={{ scrollBehavior: "smooth" }} className={cn("font-sans", inter.variable)}>
       <body className="relative min-h-screen text-black dark:text-white bg-zinc-50 dark:bg-neutral-950">
+        <VerticalNav />
         <Header />
         {children}
-        <Footer id="contact" />
+        <Footer />
       </body>
     </html>
   );

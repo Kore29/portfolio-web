@@ -23,3 +23,13 @@
   --violet-200: #ddd6fe;
   --blue-400: #60a5fa;
 }
+
+/* Hide default browser scrollbar for a cleaner premium look */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
