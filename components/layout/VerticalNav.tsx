@@ -7,14 +7,13 @@ const SEGMENTS = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
   { id: "projects", label: "Projects" },
-  { id: "skills", label: "Skills" },
   { id: "contact", label: "Contact" },
 ];
 
-const SECTION_IDS = ["home", "about", "projects", "skills", "contact"];
+const SECTION_IDS = ["home", "about", "projects", "contact"];
 
 export default function VerticalNav() {
-  const [milestonePercentages, setMilestonePercentages] = useState<number[]>([0, 0.2, 0.4, 0.6, 0.8, 1.0]);
+  const [milestonePercentages, setMilestonePercentages] = useState<number[]>([0, 0.25, 0.5, 0.75, 1.0]);
   const [scrollYProgress, setScrollYProgress] = useState<number>(0);
 
   useEffect(() => {
@@ -74,9 +73,9 @@ export default function VerticalNav() {
     }
   };
 
-  // Find which segment range contains the current scroll position (0 to 4)
+  // Find which segment range contains the current scroll position
   let activeSegmentIndex = 0;
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < SEGMENTS.length; i++) {
     const start = milestonePercentages[i];
     const end = milestonePercentages[i + 1] ?? 1.0;
     if (scrollYProgress >= start && scrollYProgress <= end) {
@@ -87,7 +86,7 @@ export default function VerticalNav() {
 
   // Force last segment if user is at the very bottom
   if (scrollYProgress >= 0.99) {
-    activeSegmentIndex = 4;
+    activeSegmentIndex = SEGMENTS.length - 1;
   }
 
   const BAR_HEIGHT = 440; // Total height of progress bar in pixels

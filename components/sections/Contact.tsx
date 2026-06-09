@@ -78,9 +78,6 @@ export default function Contact() {
         {/* Info Column */}
         <div className="contact-info flex flex-col gap-y-6 opacity-0">
           <div className="flex flex-col gap-y-2">
-            <h2 className="text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">
-              Let&apos;s Build Together
-            </h2>
             <p className="text-neutral-500 dark:text-neutral-400 max-w-md leading-relaxed">
               Have an idea, project, or opportunity you&apos;d like to discuss? Drop me a message, or reach out directly via email or GitHub.
             </p>
