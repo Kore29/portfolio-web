@@ -1,35 +1,37 @@
 @import "tailwindcss";
 
 @theme {
-  --animate-aurora: aurora 60s linear infinite;
-
-  @keyframes aurora {
-    from {
-      background-position: 50% 50%, 50% 50%;
-    }
-    to {
-      background-position: 350% 50%, 350% 50%;
-    }
-  }
+  --color-zinc-900: #292929;
+  --color-zinc-800: #292929;
+  --color-zinc-850: #292929;
 }
 
-:root {
-  --white: #ffffff;
-  --black: #000000;
-  --transparent: transparent;
-  --blue-500: #3b82f6;
-  --indigo-300: #a5b4fc;
-  --blue-300: #93c5fd;
-  --violet-200: #ddd6fe;
-  --blue-400: #60a5fa;
+/* Scrollbar personalizado y minimalista */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #292929 transparent;
 }
 
-/* Hide default browser scrollbar for a cleaner premium look */
+/* Soporte para Chrome, Safari y Edge */
 ::-webkit-scrollbar {
-  display: none;
+  width: 6px;
+  height: 6px;
 }
 
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #292929;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46; /* zinc-700 */
+}
+
+/* Estilos de scroll suave global */
 html {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scroll-behavior: smooth;
 }

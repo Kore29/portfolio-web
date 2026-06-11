@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
 import React from "react";
-import Footer from "@/components/layout/Footer";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Inter, Space_Mono } from "next/font/google";
 import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const spaceMono = Space_Mono({ 
+  subsets: ["latin"], 
+  weight: ["400", "700"], 
+  variable: "--font-mono" 
+});
 
 export const metadata: Metadata = {
-  title: "Kore's Portfolio - Web & Mobile Developer",
-  description:
-    "Hire Kore to build your next web or mobile app. Passionate about creating unique and engaging applications.",
+  title: "Portfolio — Dark Minimalist",
+  description: "A sleek, responsive, and minimalist portfolio site inspired by Quattro.",
 };
 
 export default function RootLayout({
@@ -19,11 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" style={{ scrollBehavior: "smooth" }} className={cn("font-sans", inter.variable)}>
-      <body className="relative min-h-screen text-black dark:text-white bg-zinc-50 dark:bg-neutral-950">
+    <html lang="en" className={cn("dark font-sans scroll-smooth", inter.variable, spaceMono.variable)}>
+      <body className="min-h-screen bg-black text-zinc-100 antialiased selection:bg-white selection:text-black">
         {children}
-        <Footer />
       </body>
     </html>
   );
 }
+
+
