@@ -4,9 +4,6 @@ export default function Contact() {
       id="contacto"
       className="flex min-h-screen flex-col justify-center px-8"
     >
-      <h2 className="text-4xl font-bold tracking-tight sm:text-6xl">
-        Start a project
-      </h2>
       <p className="mt-4 text-xl text-zinc-400">
         Formulario o información de contacto.
       </p>
