@@ -1,19 +1,16 @@
 import type { Metadata } from "next";
 import React from "react";
 import "./globals.css";
-import { Inter, Space_Mono } from "next/font/google";
 import { cn } from "@/lib/utils";
 
+import { Inter } from "next/font/google";
+import Navbar from "@/components/Navbar";
+
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const spaceMono = Space_Mono({ 
-  subsets: ["latin"], 
-  weight: ["400", "700"], 
-  variable: "--font-mono" 
-});
 
 export const metadata: Metadata = {
-  title: "Portfolio — Dark Minimalist",
-  description: "A sleek, responsive, and minimalist portfolio site inspired by Quattro.",
+  title: "Portfolio Martí",
+  description: "portfolio description.",
 };
 
 export default function RootLayout({
@@ -22,12 +19,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("dark font-sans scroll-smooth", inter.variable, spaceMono.variable)}>
-      <body className="min-h-screen bg-black text-zinc-100 antialiased selection:bg-white selection:text-black">
+    <html
+      lang="en"
+      className={cn(
+        "font-sans scroll-smooth overscroll-none bg-stone-950 text-white",
+        inter.variable,
+      )}
+    >
+      <body className="min-h-screen">
+        <Navbar />
         {children}
       </body>
     </html>
   );
 }
-
-
