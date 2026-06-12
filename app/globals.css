@@ -1,37 +1,4 @@
 @import "tailwindcss";
 
-@theme {
-  --color-zinc-900: #292929;
-  --color-zinc-800: #292929;
-  --color-zinc-850: #292929;
-}
 
-/* Scrollbar personalizado y minimalista */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #292929 transparent;
-}
 
-/* Soporte para Chrome, Safari y Edge */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #292929;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #3f3f46; /* zinc-700 */
-}
-
-/* Estilos de scroll suave global */
-html {
-  scroll-behavior: smooth;
-}
