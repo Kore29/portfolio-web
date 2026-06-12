@@ -1,17 +1,15 @@
-"use client";
-
-import React from "react";
+import Hero from "@/sections/Hero";
+import Projects from "@/sections/Projects";
+import About from "@/sections/About";
+import Contact from "@/sections/Contact";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center p-6">
-      <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold tracking-tight">Portafolio Vacío</h1>
-        <p className="text-zinc-400 text-sm max-w-sm mx-auto">
-          El diseño anterior ha sido removido con éxito. El archivo está listo
-          para escribir tu nuevo código.
-        </p>
-      </div>
+    <main>
+      <Hero />
+      <Projects />
+      <About />
+      <Contact />
     </main>
   );
 }

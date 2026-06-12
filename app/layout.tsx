@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 
 import { Inter } from "next/font/google";
+import SmoothScrollProvider from "@/context/SmoothScrollProvider";
 import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -27,8 +28,10 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-screen">
-        <Navbar />
-        {children}
+        <SmoothScrollProvider>
+          <Navbar />
+          {children}
+        </SmoothScrollProvider>
       </body>
     </html>
   );
