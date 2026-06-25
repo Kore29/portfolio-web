@@ -1,4 +1,3 @@
-import Hero from "@/sections/Hero";
 import Projects from "@/sections/Projects";
 import About from "@/sections/About";
 import Contact from "@/sections/Contact";
@@ -9,12 +8,19 @@ export default function Home() {
     <main>
       <PageHeader
         title="martí castaño"
-        subtitle="i design strategic brand identities that help small businesses and startups stand out and connect with their customers."
+        subtitle="i build fullstack web applications, automate systems, and develop AI-powered software solutions."
       />
-      <Hero />
-      <Projects />
-      <About />
-      <Contact />
+      <div className="flex flex-col">
+        <div className="mt-32">
+          <Projects />
+        </div>
+        <div className="mt-32">
+          <About />
+        </div>
+        <div className="mt-32">
+          <Contact />
+        </div>
+      </div>
     </main>
   );
 }

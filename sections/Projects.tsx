@@ -1,70 +1,45 @@
 import Link from "next/link";
+import Image from "next/image";
+import { projects } from "@/lib/projects";
 
 export default function Projects() {
+  // Group projects into pairs (rows of two) to preserve design layout weights
+  const rows = [];
+  for (let i = 0; i < projects.length; i += 2) {
+    rows.push(projects.slice(i, i + 2));
+  }
+
   return (
-    <section id="projects" className="px-8 py-24 w-full">
+    <section id="projects" className="w-full">
       <div className="flex flex-col gap-16 w-full">
-        {/* Fila 1 */}
-        <div className="flex flex-col md:flex-row gap-6 w-full">
-          <Link
-            href="/work/lattice"
-            className="group flex-[1.5] flex flex-col gap-4"
-          >
-            <div className="w-full aspect-16/11 bg-zinc-900/50 flex items-center justify-center overflow-hidden">
-              <span className="text-zinc-700 font-mono text-sm tracking-widest uppercase">
-                Image lattice
-              </span>
-            </div>
-            <div>
-              <h3 className="text-xl text-zinc-100 tracking-tight">Lattice</h3>
-              <p className="text-sm text-zinc-500 mt-1">Navegación & AR</p>
-            </div>
-          </Link>
-
-          <Link href="/work/volta" className="group flex-1 flex flex-col gap-4">
-            <div className="w-full aspect-4/5 bg-zinc-900/50 flex items-center justify-center overflow-hidden">
-              <span className="text-zinc-700 font-mono text-sm tracking-widest uppercase">
-                Image volta
-              </span>
-            </div>
-
-            <div>
-              <h3 className="text-xl text-zinc-100 tracking-tight">Volta</h3>
-              <p className="text-sm text-zinc-500 mt-1">Full-Stack SaaS</p>
-            </div>
-          </Link>
-        </div>
-
-        {/* Fila 2 */}
-        <div className="flex flex-col md:flex-row gap-6 w-full">
-          <Link
-            href="/work/lattice"
-            className="group flex-[1] flex flex-col gap-4"
-          >
-            <div className="w-full aspect-7/8 bg-zinc-900/50 flex items-center justify-center overflow-hidden">
-              <span className="text-zinc-700 font-mono text-sm tracking-widest uppercase">
-                Image Iter
-              </span>
-            </div>
-            <div>
-              <h3 className="text-xl text-zinc-100 tracking-tight">Iter</h3>
-              <p className="text-sm text-zinc-500 mt-1">Navegación & AR</p>
-            </div>
-          </Link>
-
-          <Link href="/work/volta" className="group flex-1 flex flex-col gap-4">
-            <div className="w-full aspect-6/5 bg-zinc-900/50 flex items-center justify-center overflow-hidden">
-              <span className="text-zinc-700 font-mono text-sm tracking-widest uppercase">
-                Image Muvv
-              </span>
-            </div>
-
-            <div>
-              <h3 className="text-xl text-zinc-100 tracking-tight">Muvv</h3>
-              <p className="text-sm text-zinc-500 mt-1">Full-Stack SaaS</p>
-            </div>
-          </Link>
-        </div>
+        {rows.map((row, rowIndex) => (
+          <div key={rowIndex} className="flex flex-col md:flex-row gap-6 w-full">
+            {row.map((project) => (
+              <Link
+                key={project.slug}
+                href={`/work/${project.slug}`}
+                className={`group flex flex-col gap-4 ${project.flexClass}`}
+              >
+                <div className={`relative w-full ${project.aspectClass} overflow-hidden`}>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-xl text-zinc-100 tracking-tight">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-zinc-500 mt-1">
+                    {project.category}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        ))}
       </div>
     </section>
   );
