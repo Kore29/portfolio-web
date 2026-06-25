@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -38,7 +39,7 @@ export default function About() {
       {/* Main animated heading */}
       <h2
         ref={container}
-        className="text-4xl md:text-5xl font-sans leading-tight tracking-tight"
+        className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-sans font-normal leading-tight tracking-tight"
       >
         {phrase.split(" ").map((word, index) => (
           <span key={index} className="word text-zinc-700 opacity-30">
@@ -49,24 +50,33 @@ export default function About() {
 
       {/* 3-Column Bottom Info Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-20">
-        {/* Column 1: Black box instead of photo */}
-        <div className="bg-zinc-950 rounded-lg aspect-square w-full border border-zinc-900 relative shadow-2xl flex items-center justify-center">
-          <div className="text-zinc-800 font-sans text-xs">photo placeholder</div>
+        {/* Column 1: Cover Photo */}
+        <div className="relative w-full aspect-square overflow-hidden rounded-lg border border-zinc-900 shadow-2xl group">
+          <Image
+            src="/me/IMG_5164.jpeg"
+            alt="Martí Castaño"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
+          />
         </div>
 
         {/* Column 2: why work with me / code approach */}
-        <div className="flex flex-col justify-between h-full gap-6">
+        <div className="flex flex-col gap-6">
           <div className="flex flex-col">
-            <span className="text-sm text-zinc-500 font-sans">
+            <span className="text-xl xl:text-base text-zinc-400 font-sans">
               my approach to code
             </span>
-            <p className="text-zinc-300 font-sans mt-3 leading-relaxed text-sm">
-              i enjoy tackling challenges with creativity and efficiency, always aiming for clean, maintainable code. i'm particularly passionate about fullstack development, AI applications, and exploring innovative solutions in web and system programming.
+            <p className="text-zinc-200 font-sans mt-3 leading-relaxed text-lg xl:text-xl">
+              i enjoy tackling challenges with creativity and efficiency, always
+              aiming for clean, maintainable code. i'm particularly passionate
+              about fullstack development, AI applications, and exploring
+              innovative solutions in web and system programming.
             </p>
           </div>
           <a
             href="#"
-            className="w-fit px-4 py-2 bg-zinc-100 hover:bg-zinc-200 text-zinc-900 text-sm font-medium rounded transition-colors font-sans text-center"
+            className="w-fit px-5 py-2.5 bg-zinc-100 hover:bg-zinc-200 text-zinc-900 text-sm xl:text-base rounded transition-colors font-sans text-center"
           >
             download resume
           </a>
@@ -74,11 +84,14 @@ export default function About() {
 
         {/* Column 3: when i'm not coding */}
         <div className="flex flex-col">
-          <span className="text-sm text-zinc-500 font-sans">
+          <span className="text-sm xl:text-base text-zinc-400 font-sans">
             when i'm not coding
           </span>
-          <p className="text-zinc-300 font-sans mt-3 leading-relaxed text-sm">
-            outside of coding, i love experimenting with home tech projects, tinkering with servers and home automation, and learning new tools just for fun. you'll always find me exploring new technologies or tweaking my custom Arch Linux installation.
+          <p className="text-zinc-200 font-sans mt-3 leading-relaxed text-lg xl:text-xl">
+            outside of coding, i love experimenting with home tech projects,
+            tinkering with servers and home automation, and learning new tools
+            just for fun. you'll always find me exploring new technologies or
+            tweaking my custom Arch Linux installation.
           </p>
         </div>
       </div>

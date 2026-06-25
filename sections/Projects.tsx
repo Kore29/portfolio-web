@@ -25,14 +25,15 @@ export default function Projects() {
                     src={project.image}
                     alt={project.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
                 <div>
-                  <h3 className="text-xl text-zinc-100 tracking-tight">
+                  <h3 className="text-xl md:text-2xl xl:text-3xl text-zinc-100 tracking-tight">
                     {project.title}
                   </h3>
-                  <p className="text-sm text-zinc-500 mt-1">
+                  <p className="text-sm xl:text-base text-zinc-500 mt-1">
                     {project.category}
                   </p>
                 </div>

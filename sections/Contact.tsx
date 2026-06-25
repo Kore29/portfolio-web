@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <section id="contact" className="pb-32 w-full">
+    <section id="contact" className="pt-32 pb-32 w-full">
       {/* Visual CTA Banner */}
       <div className="relative w-full py-24 mb-16">
         <div className="flex flex-row items-center justify-between w-full mx-auto gap-4">
@@ -60,19 +60,19 @@ export default function Contact() {
             <span className="text-sm text-zinc-500 mb-2">pages</span>
             <Link
               href="/"
-              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors font-medium"
+              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors"
             >
               home
             </Link>
             <Link
               href="/about"
-              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors font-medium"
+              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors"
             >
               about
             </Link>
             <Link
               href="/work"
-              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors font-medium"
+              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors"
             >
               work
             </Link>
@@ -85,7 +85,7 @@ export default function Contact() {
               href="https://github.com/Kore29"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors font-medium"
+              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors"
             >
               github
             </a>
@@ -93,13 +93,13 @@ export default function Contact() {
               href="https://www.coursera.org/user/09b51cfaa8a857c4beb926d027c32d85"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors font-medium"
+              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors"
             >
               coursera
             </a>
             <a
               href="#"
-              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors font-medium"
+              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors"
             >
               linkedin
             </a>

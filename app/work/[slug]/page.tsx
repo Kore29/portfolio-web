@@ -44,6 +44,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           alt={project.title}
           fill
           priority
+          sizes="(max-width: 1200px) 100vw, 1200px"
           className="object-cover"
         />
       </div>
@@ -55,7 +56,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <h2 className="text-zinc-500 text-sm uppercase tracking-wider mb-2">
               Category
             </h2>
-            <p className="text-zinc-100 text-lg font-medium">
+            <p className="text-zinc-100 text-lg">
               {project.category}
             </p>
           </div>
@@ -83,7 +84,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-zinc-200 hover:text-white transition-colors border-b border-zinc-700 hover:border-white pb-1 font-medium"
+                className="inline-flex items-center gap-2 text-zinc-200 hover:text-white transition-colors border-b border-zinc-700 hover:border-white pb-1"
               >
                 view on github
                 <ExternalLink className="w-4 h-4" />

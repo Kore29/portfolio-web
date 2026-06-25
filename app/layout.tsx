@@ -43,7 +43,8 @@ const nohemi = localFont({
 
 export const metadata: Metadata = {
   title: "Martí Castaño | Fullstack Developer & AI",
-  description: "Martí Castaño's professional portfolio. Fullstack developer specialized in building web applications, systems automation, and AI-powered solutions.",
+  description:
+    "Martí Castaño's professional portfolio. Fullstack developer specialized in building web applications, systems automation, and AI-powered solutions.",
 };
 
 export default function RootLayout({
@@ -54,6 +55,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={cn(
         "font-sans scroll-smooth overscroll-none bg-[#1a1a1a] text-white",
         inter.variable,
@@ -63,7 +65,7 @@ export default function RootLayout({
       <body className="min-h-screen">
         <SmoothScrollProvider>
           <Navbar />
-          <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+          <div className="mx-auto w-full max-w-480 px-4 md:px-8 lg:px-12">
             {children}
           </div>
         </SmoothScrollProvider>

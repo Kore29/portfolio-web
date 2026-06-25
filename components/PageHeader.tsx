@@ -57,13 +57,13 @@ export default function PageHeader({ title, subtitle }: PageHeaderProps) {
       <h1
         ref={textRef}
         style={{ fontSize }}
-        className="font-nohemi leading-[0.8] tracking-tighter text-zinc-100 whitespace-nowrap inline-block"
+        className="font-nohemi font-normal leading-[0.8] tracking-tighter text-zinc-100 whitespace-nowrap inline-block"
       >
         {title}
       </h1>
 
       {subtitle && (
-        <p className="mt-6 text-xl text-zinc-400 font-sans tracking-wide text-left md:text-right max-w-full md:max-w-[50%] ml-auto">
+        <p className="mt-6 text-xl xl:text-2xl text-zinc-400 font-sans tracking-wide text-left md:text-right max-w-full md:max-w-[50%] ml-auto">
           {subtitle}
         </p>
       )}
