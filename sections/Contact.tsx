@@ -35,9 +35,9 @@ export default function Contact() {
       </div>
 
       {/* Footer Info Column */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-12 pt-16 border-t border-zinc-900">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-12 pt-16 border-t border-zinc-800">
         {/* Info Column */}
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 text-size-small">
           <p className="text-zinc-100">
             email:{" "}
             <a
@@ -54,25 +54,25 @@ export default function Contact() {
         </div>
 
         {/* Links Group */}
-        <div className="flex gap-20 md:gap-32">
+        <div className="flex gap-20 md:gap-32 text-size-small">
           {/* Pages Column */}
           <div className="flex flex-col gap-2">
-            <span className="text-sm text-zinc-500 mb-2">pages</span>
+            <span className="text-zinc-500 mb-2">pages</span>
             <Link
               href="/"
-              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors"
+              className="text-zinc-100 hover:text-zinc-400 transition-colors"
             >
               home
             </Link>
             <Link
               href="/about"
-              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors"
+              className="text-zinc-100 hover:text-zinc-400 transition-colors"
             >
               about
             </Link>
             <Link
               href="/work"
-              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors"
+              className="text-zinc-100 hover:text-zinc-400 transition-colors"
             >
               work
             </Link>
@@ -80,12 +80,12 @@ export default function Contact() {
 
           {/* Socials Column */}
           <div className="flex flex-col gap-2">
-            <span className="text-sm text-zinc-500 mb-2">socials</span>
+            <span className="text-zinc-500 mb-2">socials</span>
             <a
               href="https://github.com/Kore29"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors"
+              className="text-zinc-100 hover:text-zinc-400 transition-colors"
             >
               github
             </a>
@@ -93,13 +93,13 @@ export default function Contact() {
               href="https://www.coursera.org/user/09b51cfaa8a857c4beb926d027c32d85"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors"
+              className="text-zinc-100 hover:text-zinc-400 transition-colors"
             >
               coursera
             </a>
             <a
               href="#"
-              className="text-lg text-zinc-100 hover:text-zinc-400 transition-colors"
+              className="text-zinc-100 hover:text-zinc-400 transition-colors"
             >
               linkedin
             </a>

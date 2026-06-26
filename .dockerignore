@@ -1,0 +1,25 @@
+# Git
+.git
+.gitignore
+
+# Dependencies
+node_modules
+/eslint.config.mjs
+
+# Next.js build outputs
+.next
+out
+build
+
+# Environment files
+.env*.local
+
+# Package manager logs & config
+.npm
+*-debug.log*
+*-error.log*
+
+# Docker files (not needed inside container)
+Dockerfile
+docker-compose.yml
+.dockerignore

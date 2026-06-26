@@ -18,7 +18,8 @@ export default function Projects() {
               <Link
                 key={project.slug}
                 href={`/work/${project.slug}`}
-                className={`group flex flex-col gap-4 ${project.flexClass}`}
+                data-cursor="project"
+                className={`group flex flex-col gap-4 md:cursor-none ${project.flexClass}`}
               >
                 <div className={`relative w-full ${project.aspectClass} overflow-hidden`}>
                   <Image
@@ -30,10 +31,10 @@ export default function Projects() {
                   />
                 </div>
                 <div>
-                  <h3 className="text-xl md:text-2xl xl:text-3xl text-zinc-100 tracking-tight">
+                  <h3 className="text-zinc-100 text-size-medium">
                     {project.title}
                   </h3>
-                  <p className="text-sm xl:text-base text-zinc-500 mt-1">
+                  <p className="text-zinc-500 text-size-small mt-1">
                     {project.category}
                   </p>
                 </div>

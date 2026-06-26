@@ -63,7 +63,7 @@ export default function PageHeader({ title, subtitle }: PageHeaderProps) {
       </h1>
 
       {subtitle && (
-        <p className="mt-6 text-xl xl:text-2xl text-zinc-400 font-sans tracking-wide text-left md:text-right max-w-full md:max-w-[50%] ml-auto">
+        <p className="mt-6 text-size-medium text-zinc-400 font-sans tracking-wide text-left md:text-right max-w-full md:max-w-[50%] ml-auto">
           {subtitle}
         </p>
       )}

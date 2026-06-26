@@ -8,6 +8,7 @@ export interface Project {
   tags: string[];
   flexClass: string;
   aspectClass: string;
+  categories: string[];
 }
 
 export const projects: Project[] = [
@@ -21,6 +22,7 @@ export const projects: Project[] = [
     tags: ["Express", "Bootstrap", "JavaScript", "SQL", "MongoDB", "Docker"],
     flexClass: "flex-[1.5]",
     aspectClass: "aspect-16/11",
+    categories: ["web", "systems"],
   },
   {
     slug: "nutrisalut",
@@ -32,6 +34,7 @@ export const projects: Project[] = [
     tags: ["Bootstrap", "JavaScript", "OpenAI API"],
     flexClass: "flex-1",
     aspectClass: "aspect-4/5",
+    categories: ["web", "ai"],
   },
   {
     slug: "whale",
@@ -43,6 +46,7 @@ export const projects: Project[] = [
     tags: ["Java", "SQL", "Swing / CLI", "Git"],
     flexClass: "flex-1",
     aspectClass: "aspect-7/8",
+    categories: ["systems"],
   },
   {
     slug: "web-dev-notes",
@@ -54,5 +58,6 @@ export const projects: Project[] = [
     tags: ["HTML", "CSS", "JavaScript"],
     flexClass: "flex-1",
     aspectClass: "aspect-6/5",
+    categories: ["web"],
   },
 ];

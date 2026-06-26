@@ -53,7 +53,7 @@ export default function About() {
         {/* Column 1: Cover Photo */}
         <div className="relative w-full aspect-square overflow-hidden rounded-lg border border-zinc-900 shadow-2xl group">
           <Image
-            src="/me/IMG_5164.jpeg"
+            src="/me/IMG_2843.jpeg"
             alt="Martí Castaño"
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
@@ -64,10 +64,10 @@ export default function About() {
         {/* Column 2: why work with me / code approach */}
         <div className="flex flex-col gap-6">
           <div className="flex flex-col">
-            <span className="text-xl xl:text-base text-zinc-400 font-sans">
+            <span className="text-zinc-400 font-sans text-size-small">
               my approach to code
             </span>
-            <p className="text-zinc-200 font-sans mt-3 leading-relaxed text-lg xl:text-xl">
+            <p className="text-zinc-200 font-sans mt-3 text-size-small">
               i enjoy tackling challenges with creativity and efficiency, always
               aiming for clean, maintainable code. i'm particularly passionate
               about fullstack development, AI applications, and exploring
@@ -76,7 +76,7 @@ export default function About() {
           </div>
           <a
             href="#"
-            className="w-fit px-5 py-2.5 bg-zinc-100 hover:bg-zinc-200 text-zinc-900 text-sm xl:text-base rounded transition-colors font-sans text-center"
+            className="w-fit px-5 py-2.5 bg-zinc-100 hover:bg-zinc-200 text-zinc-900 text-size-small rounded transition-colors font-sans text-center"
           >
             download resume
           </a>
@@ -84,10 +84,10 @@ export default function About() {
 
         {/* Column 3: when i'm not coding */}
         <div className="flex flex-col">
-          <span className="text-sm xl:text-base text-zinc-400 font-sans">
+          <span className="text-zinc-400 font-sans text-size-small">
             when i'm not coding
           </span>
-          <p className="text-zinc-200 font-sans mt-3 leading-relaxed text-lg xl:text-xl">
+          <p className="text-zinc-200 font-sans mt-3 text-size-small">
             outside of coding, i love experimenting with home tech projects,
             tinkering with servers and home automation, and learning new tools
             just for fun. you'll always find me exploring new technologies or
