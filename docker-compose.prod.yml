@@ -1,8 +1,6 @@
 services:
   portfolio-web:
-    build:
-      context: .
-      dockerfile: Dockerfile.prod
+    image: ghcr.io/kore29/portfolio-web:latest
     container_name: portfolio-web
     restart: unless-stopped
     ports:
@@ -15,6 +13,17 @@ services:
       - NODE_ENV=production
     networks:
       - cloudfare-tunnel_default
+
+  watchtower:
+    image: containrrr/watchtower:latest
+    container_name: portfolio-watchtower
+    restart: always
+    environment:
+      - DOCKER_API_VERSION=1.40
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ~/.docker/config.json:/config.json
+    command: --cleanup --interval 300 portfolio-web
 
 networks:
   cloudfare-tunnel_default:
