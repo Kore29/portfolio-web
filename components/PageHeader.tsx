@@ -5,9 +5,10 @@ import { useEffect, useRef, useState } from "react";
 interface PageHeaderProps {
   title: string;
   subtitle?: string;
+  marquee?: boolean;
 }
 
-export default function PageHeader({ title, subtitle }: PageHeaderProps) {
+export default function PageHeader({ title, subtitle, marquee }: PageHeaderProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLHeadingElement>(null);
 
@@ -57,7 +58,9 @@ export default function PageHeader({ title, subtitle }: PageHeaderProps) {
       <h1
         ref={textRef}
         style={{ fontSize }}
-        className="font-nohemi font-normal leading-[0.8] tracking-tighter text-zinc-100 whitespace-nowrap inline-block"
+        className={`font-nohemi font-normal leading-[0.8] tracking-tighter text-zinc-100 whitespace-nowrap inline-block ${
+          marquee ? "animate-marquee-single-l2r" : ""
+        }`}
       >
         {title}
       </h1>

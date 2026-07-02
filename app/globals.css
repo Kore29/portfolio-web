@@ -22,3 +22,29 @@
   line-height: 1.6;
   letter-spacing: -0.01em;
 }
+
+@keyframes marquee-l2r {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@utility animate-marquee-l2r {
+  animation: marquee-l2r 15s linear infinite;
+}
+
+@keyframes marquee-single-l2r {
+  from {
+    transform: translateX(calc(-50vw - 50%));
+  }
+  to {
+    transform: translateX(calc(50vw + 50%));
+  }
+}
+
+@utility animate-marquee-single-l2r {
+  animation: marquee-single-l2r 10s linear infinite;
+}

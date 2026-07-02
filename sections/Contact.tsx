@@ -5,11 +5,11 @@ export default function Contact() {
   return (
     <section id="contact" className="pt-32 pb-32 w-full">
       {/* Visual CTA Banner */}
-      <div className="relative w-full py-24 mb-16">
-        <div className="flex flex-row items-center justify-between w-full mx-auto gap-4">
+      <div className="relative w-full py-16 md:py-24 mb-16">
+        <div className="flex flex-row items-center justify-between w-full mx-auto gap-2 sm:gap-4 md:gap-8">
           {/* Left Side: GET IN */}
-          <div className="flex flex-col leading-[0.75] md:leading-[0.7]">
-            <h2 className="text-[10vw] md:text-[11vw] font-nohemi tracking-tighter text-zinc-100">
+          <div className="leading-none">
+            <h2 className="text-[9vw] sm:text-[10vw] md:text-[11vw] font-nohemi tracking-tighter text-zinc-100 whitespace-nowrap select-none">
               get in
             </h2>
           </div>
@@ -26,8 +26,8 @@ export default function Contact() {
           </div>
 
           {/* Right Side: TOUCH */}
-          <div className="leading-[1]">
-            <h2 className="text-[10vw] md:text-[11vw] font-nohemi tracking-tighter text-zinc-100">
+          <div className="leading-none">
+            <h2 className="text-[9vw] sm:text-[10vw] md:text-[11vw] font-nohemi tracking-tighter text-zinc-100 whitespace-nowrap select-none">
               touch
             </h2>
           </div>
@@ -37,8 +37,8 @@ export default function Contact() {
       {/* Footer Info Column */}
       <div className="flex flex-col md:flex-row justify-between items-start gap-12 pt-16 border-t border-zinc-800">
         {/* Info Column */}
-        <div className="flex flex-col gap-2 text-size-small">
-          <p className="text-zinc-100">
+        <div className="flex flex-col gap-2 text-size-small max-w-full">
+          <p className="text-zinc-100 break-all">
             email:{" "}
             <a
               href="mailto:marticastanorodriguez@gmail.com"
@@ -54,7 +54,7 @@ export default function Contact() {
         </div>
 
         {/* Links Group */}
-        <div className="flex gap-20 md:gap-32 text-size-small">
+        <div className="flex gap-12 sm:gap-20 md:gap-32 text-size-small">
           {/* Pages Column */}
           <div className="flex flex-col gap-2">
             <span className="text-zinc-500 mb-2">pages</span>

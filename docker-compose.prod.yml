@@ -6,10 +6,16 @@ services:
     container_name: portfolio-web
     restart: unless-stopped
     ports:
-      - '3000:3000'
+      - "3000:3000"
     env_file:
-      - .env.prod
+      - .env
     environment:
       - PORT=3000
       - HOSTNAME=0.0.0.0
       - NODE_ENV=production
+    networks:
+      - cloudfare-tunnel_default
+
+networks:
+  cloudfare-tunnel_default:
+    external: true

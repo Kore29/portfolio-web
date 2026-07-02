@@ -13,13 +13,13 @@ export default function AboutPage() {
         {/* Left: Bio text */}
         <div className="lg:col-span-7 flex flex-col gap-6 text-zinc-300 text-size-small font-sans">
           <p>
-            i'm martí castaño, a fullstack developer who loves creating projects that mix frontend, backend, and artificial intelligence.
+            {"i'm"} martí castaño, a fullstack developer who loves creating projects that mix frontend, backend, and artificial intelligence.
           </p>
           <p>
-            i'm always experimenting with new things: from building my own operating system with Arch Linux to tinkering with servers, home automation, and writing clean, efficient code.
+            {"i'm"} always experimenting with new things: from building my own operating system with Arch Linux to tinkering with servers, home automation, and writing clean, efficient code.
           </p>
           <p>
-            i enjoy tackling challenges with creativity and efficiency, always aiming for clean, maintainable code. when i'm not coding, you'll find me exploring new tech or tweaking my custom setups.
+            i enjoy tackling challenges with creativity and efficiency, always aiming for clean, maintainable code. when {"i'm"} not coding, {"you'll"} find me exploring new tech or tweaking my custom setups.
           </p>
           <a
             href="#"

@@ -1,10 +1,9 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import Link from "next/link";
 import { projects } from "@/lib/projects";
 import Contact from "@/sections/Contact";
 import PageHeader from "@/components/PageHeader";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 export function generateStaticParams() {
   return projects.map((project) => ({
@@ -26,17 +25,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
   return (
     <main className="min-h-screen">
-      <div className="pt-8">
-        <Link
-          href="/work"
-          className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors group mb-8 text-size-small"
-        >
-          <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
-          back to work
-        </Link>
-      </div>
-
-      <PageHeader title={project.title.toLowerCase()} />
+      <PageHeader title={project.title.toLowerCase()} marquee={true} />
 
       <div className="w-full relative aspect-[16/9] overflow-hidden mb-16 rounded-xl border border-zinc-800 shadow-2xl">
         <Image
