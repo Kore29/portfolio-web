@@ -49,9 +49,9 @@ export default function About() {
       </h2>
 
       {/* 3-Column Bottom Info Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 mt-20">
         {/* Column 1: Cover Photo */}
-        <div className="relative w-full aspect-square overflow-hidden rounded-lg border border-zinc-900 shadow-2xl">
+        <div className="relative w-full aspect-square overflow-hidden rounded-lg border border-zinc-900 shadow-2xl md:col-span-2 lg:col-span-1">
           <Image
             src="/me/IMG_5164.jpeg"
             alt="Martí Castaño"
@@ -75,7 +75,8 @@ export default function About() {
           </p>
         </div>
         <a
-          href="#"
+          href="/resume.pdf"
+          download="Marti_Castano_Resume.pdf"
           className="w-fit px-5 py-2.5 bg-zinc-100 hover:bg-zinc-200 text-zinc-900 text-size-small rounded transition-colors font-sans text-center"
         >
           download resume

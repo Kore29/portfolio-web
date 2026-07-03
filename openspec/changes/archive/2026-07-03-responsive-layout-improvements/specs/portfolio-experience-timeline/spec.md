@@ -1,14 +1,4 @@
-# portfolio-experience-timeline Specification
-
-## Purpose
-TBD - created by archiving change portfolio-views-update. Update Purpose after archive.
-## Requirements
-### Requirement: Grayscale Profile Layout
-The about page MUST display a two-column section with biographical text + resume button on the left, and a profile photo `/me/IMG_5164.jpeg` with a CSS grayscale filter on the right.
-
-#### Scenario: Profile Display on About Page
-- **WHEN** the user visits `/about`
-- **THEN** the page SHALL display the biographical text and the grayscale image side-by-side in responsive layout.
+## MODIFIED Requirements
 
 ### Requirement: Table-structured Timeline Grid
 The about page MUST display a structured list of experiences, contests, and courses, where each item is separated by horizontal dividers. On desktop viewports (>= 768px), the layout SHALL be structured in three columns (Company & Role, Description, Period). On mobile viewports (< 768px), the layout SHALL stack vertically but group the Period (date) directly adjacent to the Company and Role metadata to preserve timeline reading order.
@@ -20,4 +10,3 @@ The about page MUST display a structured list of experiences, contests, and cour
 #### Scenario: Displaying Achievements Timeline on Mobile
 - **WHEN** the experience section is rendered on a viewport width < 768px
 - **THEN** the layout SHALL group the Period (date) with the Company and Role metadata, and render the description text underneath.
-

@@ -13,7 +13,10 @@ export default function PageHeader({ title, subtitle, marquee }: PageHeaderProps
   const textRef = useRef<HTMLHeadingElement>(null);
 
   const initialFontSize = `calc(100vw / ${title.length} * 1.35)`;
-  const [fontSize, setFontSize] = useState<string>(initialFontSize);
+  const [titleStyle, setTitleStyle] = useState<{ fontSize: string; whiteSpace: "nowrap" | "normal" }>({
+    fontSize: initialFontSize,
+    whiteSpace: "nowrap",
+  });
 
   useEffect(() => {
     const container = containerRef.current;
@@ -22,15 +25,31 @@ export default function PageHeader({ title, subtitle, marquee }: PageHeaderProps
 
     const fitText = () => {
       const containerWidth = container.clientWidth;
+      if (containerWidth === 0) return;
+
+      // Temporarily force nowrap to measure the full single-line width
+      text.style.whiteSpace = "nowrap";
       const textWidth = text.scrollWidth;
       const currentFontSize = parseFloat(
         window.getComputedStyle(text).fontSize,
       );
 
-      if (containerWidth > 0 && textWidth > 0 && currentFontSize > 0) {
+      if (textWidth > 0 && currentFontSize > 0) {
         const targetWidth = containerWidth * 0.96;
-        const newFontSize = (targetWidth / textWidth) * currentFontSize;
-        setFontSize(`${newFontSize}px`);
+        let newFontSize = (targetWidth / textWidth) * currentFontSize;
+        let newWhiteSpace: "nowrap" | "normal" = "nowrap";
+
+        // Enforce a professional minimum size for readability (32px = 2rem)
+        const minSize = 32;
+        if (!marquee && newFontSize < minSize) {
+          newFontSize = minSize;
+          newWhiteSpace = "normal";
+        }
+
+        setTitleStyle({
+          fontSize: `${newFontSize}px`,
+          whiteSpace: newWhiteSpace,
+        });
       }
     };
 
@@ -48,7 +67,7 @@ export default function PageHeader({ title, subtitle, marquee }: PageHeaderProps
     return () => {
       resizeObserver.disconnect();
     };
-  }, [title]);
+  }, [title, marquee]);
 
   return (
     <div
@@ -57,8 +76,8 @@ export default function PageHeader({ title, subtitle, marquee }: PageHeaderProps
     >
       <h1
         ref={textRef}
-        style={{ fontSize }}
-        className={`font-nohemi font-normal leading-[0.8] tracking-tighter text-zinc-100 whitespace-nowrap inline-block ${
+        style={titleStyle}
+        className={`font-nohemi font-normal leading-[0.8] tracking-tighter text-zinc-100 inline-block ${
           marquee ? "animate-marquee-single-l2r" : ""
         }`}
       >

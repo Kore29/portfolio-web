@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import Link from "next/link";
+import TransitionLink from "@/components/TransitionLink";
 import Image from "next/image";
 import { projects } from "@/lib/projects";
 import gsap from "gsap";
@@ -58,7 +58,7 @@ export default function Projects() {
         {rows.map((row, rowIndex) => (
           <div key={rowIndex} className="flex flex-col md:flex-row gap-6 w-full">
             {row.map((project, colIndex) => (
-              <Link
+              <TransitionLink
                 key={project.slug}
                 href={`/work/${project.slug}`}
                 data-cursor="project"
@@ -83,7 +83,7 @@ export default function Projects() {
                     {project.category}
                   </p>
                 </div>
-              </Link>
+              </TransitionLink>
             ))}
           </div>
         ))}

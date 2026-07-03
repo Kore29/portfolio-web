@@ -22,7 +22,8 @@ export default function AboutPage() {
             i enjoy tackling challenges with creativity and efficiency, always aiming for clean, maintainable code. when {"i'm"} not coding, {"you'll"} find me exploring new tech or tweaking my custom setups.
           </p>
           <a
-            href="#"
+            href="/resume.pdf"
+            download="Marti_Castano_Resume.pdf"
             className="w-fit px-6 py-3 bg-zinc-100 hover:bg-zinc-200 text-zinc-900 text-size-small font-normal rounded transition-colors font-sans mt-2"
           >
             download resume
@@ -57,7 +58,11 @@ export default function AboutPage() {
                 <h3 className="text-zinc-100 font-normal text-size-medium">
                   {exp.company.toLowerCase()}
                 </h3>
-                <span className="text-zinc-500 text-size-small">{exp.role.toLowerCase()}</span>
+                <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-size-small">
+                  <span className="text-zinc-500">{exp.role.toLowerCase()}</span>
+                  <span className="text-zinc-700 md:hidden">•</span>
+                  <span className="text-zinc-400 md:hidden">{exp.period.toLowerCase()}</span>
+                </div>
               </div>
               {/* Center Column: Description */}
               <div className="md:col-span-5 text-zinc-300 text-size-small">
@@ -72,7 +77,7 @@ export default function AboutPage() {
                 )}
               </div>
               {/* Right Column: Period */}
-              <div className="md:col-span-3 md:text-right text-zinc-100 font-normal text-size-small pt-1">
+              <div className="hidden md:block md:col-span-3 md:text-right text-zinc-100 font-normal text-size-small pt-1">
                 {exp.period.toLowerCase()}
               </div>
             </div>

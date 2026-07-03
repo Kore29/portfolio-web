@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import TransitionLink from "@/components/TransitionLink";
 import Contact from "@/sections/Contact";
 import PageHeader from "@/components/PageHeader";
 import { projects } from "@/lib/projects";
@@ -40,7 +40,7 @@ export default function WorkPage() {
       {/* Symmetric 2-Column Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 w-full mb-32">
         {filteredProjects.map((project) => (
-          <Link
+          <TransitionLink
             key={project.slug}
             href={`/work/${project.slug}`}
             data-cursor="project"
@@ -63,7 +63,7 @@ export default function WorkPage() {
                 {project.category.toLowerCase()}
               </p>
             </div>
-          </Link>
+          </TransitionLink>
         ))}
       </div>
 

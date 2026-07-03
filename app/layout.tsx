@@ -7,6 +7,7 @@ import localFont from "next/font/local";
 import SmoothScrollProvider from "@/context/SmoothScrollProvider";
 import Navbar from "@/components/Navbar";
 import CustomCursor from "@/components/CustomCursor";
+import PageTransition from "@/components/PageTransition";
 
 // 1. Configuración de Inter Local
 const inter = localFont({
@@ -66,6 +67,7 @@ export default function RootLayout({
       <body className="min-h-screen">
         <SmoothScrollProvider>
           <CustomCursor />
+          <PageTransition />
           <Navbar />
           <div className="mx-auto w-full max-w-480 px-4 md:px-8 lg:px-12">
             {children}

@@ -29,7 +29,7 @@ export const projects: Project[] = [
       "MapLibre GL",
     ],
     flexClass: "flex-[1.5]",
-    aspectClass: "aspect-16/11",
+    aspectClass: "aspect-[16/11]",
     categories: ["web", "systems"],
   },
   {
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     image: "/work/volta/LSVZUytX1xG.png",
     tags: ["Next.js", "WhatsApp-web.js", "Puppeteer", "PostgreSQL", "Docker"],
     flexClass: "flex-1",
-    aspectClass: "aspect-4/5",
+    aspectClass: "aspect-[4/5]",
     categories: ["web", "systems"],
   },
   {
@@ -63,7 +63,7 @@ export const projects: Project[] = [
       "Visión por Computador",
     ],
     flexClass: "flex-1",
-    aspectClass: "aspect-7/8",
+    aspectClass: "aspect-[7/8]",
     categories: ["web", "systems", "ai"],
   },
   {
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     image: "/work/muvv/Muvv.jpg",
     tags: ["Vue.js", "TensorFlow.js", "WebSockets", "Node.js", "MySQL"],
     flexClass: "flex-1",
-    aspectClass: "aspect-6/5",
+    aspectClass: "aspect-[6/5]",
     categories: ["web", "ai"],
   },
 ];
