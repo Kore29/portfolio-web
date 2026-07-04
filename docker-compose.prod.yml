@@ -11,8 +11,6 @@ services:
       - NODE_ENV=production
     ports:
       - "${PORT_HOST:-3000}:${PORT:-3000}"
-    networks:
-      - cloudfare-tunnel_default
 
   watchtower:
     image: containrrr/watchtower:latest
@@ -24,7 +22,3 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - ~/.docker/config.json:/config.json
     command: --cleanup --interval 300 portfolio-web
-
-networks:
-  cloudfare-tunnel_default:
-    external: true
