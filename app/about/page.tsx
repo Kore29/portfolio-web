@@ -32,7 +32,7 @@ export default function AboutPage() {
         {/* Right: Portrait Image */}
         <div className="lg:col-span-5 relative w-full aspect-[4/5] overflow-hidden rounded-xl border border-zinc-800 shadow-2xl">
           <Image
-            src="/me/IMG_2843.jpeg"
+            src="/me/profile-hero.webp"
             alt="Martí Castaño"
             fill
             priority

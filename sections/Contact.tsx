@@ -1,5 +1,4 @@
 import TransitionLink from "../components/TransitionLink";
-import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -14,15 +13,18 @@ export default function Contact() {
             </h2>
           </div>
 
-          {/* Center: GIF Animation */}
+          {/* Center: Optimized Loop Animation */}
           <div className="w-56 h-56 sm:w-64 sm:h-64 lg:w-[400px] lg:h-[400px] xl:w-[450px] xl:h-[450px] overflow-hidden flex-shrink-0 relative shadow-2xl rounded-xl border border-zinc-800">
-            <Image
-              src="/contact-animation.gif"
-              alt="Contact Animation"
-              fill
-              unoptimized
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
               className="w-full h-full object-cover"
-            />
+            >
+              <source src="/contact-animation.webm" type="video/webm" />
+              <source src="/contact-animation.mp4" type="video/mp4" />
+            </video>
           </div>
 
           {/* Right Side: TOUCH */}

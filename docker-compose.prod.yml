@@ -9,6 +9,8 @@ services:
       - PORT=3000
       - HOSTNAME=0.0.0.0
       - NODE_ENV=production
+    ports:
+      - "${PORT_HOST:-3000}:${PORT:-3000}"
     networks:
       - cloudfare-tunnel_default
 

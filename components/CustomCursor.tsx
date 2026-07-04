@@ -1,11 +1,27 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import gsap from "gsap";
 
 export default function CustomCursor() {
+  const pathname = usePathname();
   const cursorRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
+
+  // Reset hover state when navigation occurs
+  useEffect(() => {
+    setIsHovered(false);
+    const cursor = cursorRef.current;
+    if (cursor) {
+      gsap.to(cursor, {
+        width: 64,
+        height: 64,
+        duration: 0.3,
+        ease: "power2.out",
+      });
+    }
+  }, [pathname]);
 
   useEffect(() => {
     // Only enable on desktop devices with hover support
