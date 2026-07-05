@@ -11,14 +11,3 @@ services:
       - NODE_ENV=production
     ports:
       - "${PORT_HOST:-3000}:${PORT:-3000}"
-
-  watchtower:
-    image: containrrr/watchtower:latest
-    container_name: portfolio-watchtower
-    restart: always
-    environment:
-      - DOCKER_API_VERSION=1.40
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - ~/.docker/config.json:/config.json
-    command: --cleanup --interval 300 portfolio-web
