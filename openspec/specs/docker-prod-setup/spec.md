@@ -18,11 +18,11 @@ The system MUST provide a multi-stage `Dockerfile.prod` using `pnpm` that separa
 - **THEN** the builder stage SHALL build the standalone Next.js bundle, and the runner stage SHALL copy only the minimal standalone files and public assets into the final production image.
 
 ### Requirement: Container Orchestration
-The system MUST provide a `docker-compose.prod.yml` file to manage the execution, environment variables, port mappings, and lifecycle of the portfolio container, loading production environment variables from `.env.prod`.
+The system MUST provide a `docker-compose.prod.yml` file to manage the execution, environment variables, port mappings, and lifecycle of the portfolio container, with environment variables supplied via the container platform (e.g. Portainer UI or shell environment).
 
 #### Scenario: Running Services with Compose
 - **WHEN** the command `docker compose -f docker-compose.prod.yml up -d` is executed
-- **THEN** the containerized Next.js application SHALL run in production mode on the host network mapped to port `3000` with variables loaded from `.env.prod` file.
+- **THEN** the containerized Next.js application SHALL run in production mode on the host network mapped to port `3000` using the environment variables defined in the orchestrator/shell.
 
 ### Requirement: Network Binding for Cloudflare Tunnel
 The containerized Next.js application MUST bind to all network interfaces to allow routing through a Cloudflare Tunnel running in the Proxmox LXC container.

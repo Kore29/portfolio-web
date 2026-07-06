@@ -3,8 +3,6 @@ services:
     image: ghcr.io/kore29/portfolio-web:latest
     container_name: portfolio-web
     restart: unless-stopped
-    env_file:
-      - .env
     environment:
       - PORT=3000
       - HOSTNAME=0.0.0.0
