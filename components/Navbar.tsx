@@ -5,11 +5,15 @@ import TransitionLink from "./TransitionLink";
 import { useLenis } from "lenis/react";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { useTranslations, useLocale } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
   const lenis = useLenis();
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const t = useTranslations("Navbar");
+  const locale = useLocale();
 
   // Auto-close menu on route change
   useEffect(() => {
@@ -64,17 +68,19 @@ export default function Navbar() {
           {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center gap-8 lg:gap-12">
             <TransitionLink href="/work" className="hover:text-zinc-400 transition-colors">
-              work
+              {t("work")}
             </TransitionLink>
             <TransitionLink href="/about" className="hover:text-zinc-400 transition-colors">
-              about me
+              {t("about")}
             </TransitionLink>
             <button
               onClick={() => lenis?.scrollTo("#contact")}
               className="hover:text-zinc-400 transition-colors cursor-pointer"
             >
-              start a project
+              {t("startProject")}
             </button>
+            <span className="text-zinc-700 select-none">|</span>
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Toggle Button */}
@@ -102,21 +108,27 @@ export default function Navbar() {
             onClick={closeMenu}
             className="hover:text-white transition-colors border-b border-zinc-800/30 pb-2"
           >
-            work
+            {t("work")}
           </TransitionLink>
           <TransitionLink
             href="/about"
             onClick={closeMenu}
             className="hover:text-white transition-colors border-b border-zinc-800/30 pb-2"
           >
-            about me
+            {t("about")}
           </TransitionLink>
           <button
             onClick={handleContactClick}
-            className="text-left hover:text-white transition-colors pb-2 cursor-pointer"
+            className="text-left hover:text-white transition-colors border-b border-zinc-800/30 pb-2 cursor-pointer"
           >
-            start a project
+            {t("startProject")}
           </button>
+          <div className="pt-2 flex items-center justify-between border-t border-zinc-800/30">
+            <span className="text-zinc-500 text-size-small">
+              {locale === "es" ? "idioma" : "language"}
+            </span>
+            <LanguageSwitcher />
+          </div>
         </div>
       </div>
     </>

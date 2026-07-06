@@ -5,15 +5,16 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { useTranslations } from "next-intl";
 
 // Registramos el plugin para que GSAP pueda leer el scroll del navegador
 gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
   const container = useRef<HTMLElement>(null);
+  const t = useTranslations("About");
 
-  const phrase =
-    "i'm Martí Castaño, a fullstack developer who loves creating projects that mix frontend, backend, and artificial intelligence. I'm always experimenting with new things: from building my own operating system with Arch Linux to tinkering with servers, home automation, and writing clean, efficient code.";
+  const phrase = t("phrase");
 
   useGSAP(
     () => {
@@ -65,35 +66,29 @@ export default function About() {
         <div className="flex flex-col gap-6">
           <div className="flex flex-col">
             <span className="text-zinc-400 font-sans text-size-small">
-              my approach to code
+              {t("approachTitle")}
             </span>
             <p className="text-zinc-200 font-sans mt-3 text-size-small">
-            i enjoy tackling challenges with creativity and efficiency, always
-            aiming for clean, maintainable code. {"i'm"} particularly passionate
-            about fullstack development, AI applications, and exploring
-            innovative solutions in web and system programming.
-          </p>
+              {t("approachDesc")}
+            </p>
+          </div>
+          <a
+            href="/resume.pdf"
+            download="Marti_Castano_Resume.pdf"
+            className="w-fit px-5 py-2.5 bg-zinc-100 hover:bg-zinc-200 text-zinc-900 text-size-small rounded transition-colors font-sans text-center"
+          >
+            {t("downloadResume")}
+          </a>
         </div>
-        <a
-          href="/resume.pdf"
-          download="Marti_Castano_Resume.pdf"
-          className="w-fit px-5 py-2.5 bg-zinc-100 hover:bg-zinc-200 text-zinc-900 text-size-small rounded transition-colors font-sans text-center"
-        >
-          download resume
-        </a>
-      </div>
 
-      {/* Column 3: when i'm not coding */}
-      <div className="flex flex-col">
-        <span className="text-zinc-400 font-sans text-size-small">
-          when {"i'm"} not coding
-        </span>
-        <p className="text-zinc-200 font-sans mt-3 text-size-small">
-          outside of coding, i love experimenting with home tech projects,
-          tinkering with servers and home automation, and learning new tools
-          just for fun. {"you'll"} always find me exploring new technologies or
-          tweaking my custom Arch Linux installation.
-        </p>
+        {/* Column 3: when i'm not coding */}
+        <div className="flex flex-col">
+          <span className="text-zinc-400 font-sans text-size-small">
+            {t("notCodingTitle")}
+          </span>
+          <p className="text-zinc-200 font-sans mt-3 text-size-small">
+            {t("notCodingDesc")}
+          </p>
         </div>
       </div>
     </section>

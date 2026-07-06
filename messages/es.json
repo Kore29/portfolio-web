@@ -1,0 +1,87 @@
+{
+  "Navbar": {
+    "work": "proyectos",
+    "about": "sobre mí",
+    "startProject": "iniciar proyecto"
+  },
+  "Home": {
+    "subtitle": "desarrollo aplicaciones web fullstack, automatizo sistemas y creo soluciones de software basadas en Inteligencia Artificial."
+  },
+  "About": {
+    "title": "sobre mí",
+    "phrase": "soy Martí Castaño, un desarrollador fullstack al que le encanta crear proyectos que mezclan frontend, backend e inteligencia artificial. Siempre estoy experimentando con cosas nuevas: desde construir mi propio sistema operativo con Arch Linux hasta trastear con servidores, domótica y escribir código limpio y eficiente.",
+    "approachTitle": "mi enfoque del código",
+    "approachDesc": "me gusta afrontar los retos con creatividad y eficiencia, buscando siempre un código limpio y fácil de mantener. Me apasiona especialmente el desarrollo fullstack, las aplicaciones de IA y explorar soluciones innovadoras en programación web y de sistemas.",
+    "downloadResume": "descargar currículum",
+    "notCodingTitle": "cuando no estoy programando",
+    "notCodingDesc": "fuera de la programación, me encanta experimentar con proyectos tecnológicos caseros, trastear con servidores y domótica, y aprender nuevas herramientas solo por diversión. Siempre me encontrarás explorando nuevas tecnologías o retocando mi instalación personalizada de Arch Linux."
+  },
+  "Experience": {
+    "title": "mi experiencia",
+    "learnMore": "saber más...",
+    "independent": {
+      "company": "Cursos y Certificaciones",
+      "role": "Estudio Independiente",
+      "period": "Verano 2025",
+      "description": "Completé un total de 5 cursos, cubriendo diseño de interfaz con Tailwind, desarrollo frontend con React, sistemas backend con Node.js, Express y MongoDB, junto con herramientas de IA y aprendizaje automático utilizando Python."
+    },
+    "programame": {
+      "company": "Concurso Final Nacional ProgramaMe Madrid",
+      "role": "Finalista Nacional y Ganador",
+      "period": "Junio 2025",
+      "description": "Llegué a la final nacional en Madrid, compitiendo al más alto nivel. Resolví complejos desafíos algorítmicos utilizando estructuras de datos eficientes y gané el premio especial por ser el equipo más rápido en resolver el primer ejercicio de programación."
+    },
+    "codewars": {
+      "company": "Concurso HP CodeWars Contest Barcelona",
+      "role": "Concursante",
+      "period": "Marzo 2024",
+      "description": "Participé en el concurso de programación competitiva HP CodeWars en Barcelona al final de la escuela secundaria, visitando las oficinas de HP y resolviendo problemas algorítmicos en un entorno de equipo colaborativo."
+    }
+  },
+  "Projects": {
+    "title": "proyectos seleccionados",
+    "categories": {
+      "all": "todos",
+      "web": "web",
+      "systems": "sistemas",
+      "ai": "ia"
+    },
+    "detail": {
+      "category": "Categoría",
+      "technologies": "Tecnologías",
+      "repository": "Repositorio de Código",
+      "viewGithub": "ver en github",
+      "overview": "Descripción del Proyecto"
+    },
+    "lattice": {
+      "title": "Lattice",
+      "category": "Sistema de mapas y navegación inteligente para festivales y eventos masivos.",
+      "description": "Es una plataforma diseñada para que los asistentes a grandes festivales y eventos no se pierdan y los organizadores puedan gestionar todo sin problemas. Incluye una aplicación móvil con un mapa interactivo muy fluido que guía a las personas en tiempo real indicando rutas accesibles a pie. También cuenta con un panel web para los organizadores, que funciona como un centro de control desde donde pueden ver mapas de calor con las zonas más aglomeradas y coordinar los accesos de forma eficiente."
+    },
+    "volta": {
+      "title": "Volta",
+      "category": "Gestión de citas y envío automático de recordatorios por WhatsApp para negocios.",
+      "description": "Es una herramienta digital pensada para que los comercios locales y empresas gestionen de forma centralizada sus calendarios, clientes y los servicios que ofrecen. Su principal ventaja es que cuenta con un asistente automático que revisa la agenda y envía recordatorios de las citas a los clientes directamente por WhatsApp. Además, incluye un sistema de seguridad legal que detecta si un cliente ha dado su permiso para recibir mensajes, asegurando que el negocio cumpla estrictamente con las leyes de protección de datos."
+    },
+    "iter-ecosystem": {
+      "title": "Iter Ecosystem",
+      "category": "Plataforma inteligente para la organización y evaluación de talleres educativos.",
+      "description": "Un sistema integral creado para automatizar por completo la organización de cursos y talleres escolares. Cuenta con herramientas inteligentes que distribuyen de forma automática y óptima a los alumnos en las clases. También incluye tecnologías avanzadas capaces de escuchar la voz de los estudiantes para evaluar sus competencias e incluso un lector visual inteligente que comprueba de forma automática que las firmas en los convenios educativos impresos sean correctas."
+    },
+    "muvv": {
+      "title": "Muvv",
+      "category": "Aplicación web de ejercicio y fitness multijugador en tiempo real.",
+      "description": "Es un juego y red social enfocado al deporte en el que los usuarios pueden entrenar y competir con amigos desde casa. Al activar la cámara web, el sistema utiliza una tecnología inteligente que reconoce los movimientos del cuerpo para contar las flexiones o sentadillas de forma interactiva. Permite crear salas virtuales para hacer ejercicio en grupo, seguir rutinas prediseñadas, ver un historial de mejoras del perfil y competir en clasificaciones globales en tiempo real."
+    }
+  },
+  "Contact": {
+    "getIn": "contacto",
+    "touch": "hablemos",
+    "email": "correo electrónico",
+    "basedIn": "ubicado en: Barcelona, España",
+    "availableFor": "disponible para: proyectos freelance y tiempo completo",
+    "pages": "páginas",
+    "socials": "redes sociales",
+    "home": "inicio"
+  }
+}

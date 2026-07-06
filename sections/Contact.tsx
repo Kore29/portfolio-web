@@ -1,6 +1,10 @@
 import TransitionLink from "../components/TransitionLink";
+import { useTranslations } from "next-intl";
 
 export default function Contact() {
+  const t = useTranslations("Contact");
+  const tNavbar = useTranslations("Navbar");
+
   return (
     <section id="contact" className="pt-0 pb-32 w-full">
       {/* Visual CTA Banner */}
@@ -9,7 +13,7 @@ export default function Contact() {
           {/* Left Side: GET IN */}
           <div className="leading-none">
             <h2 className="text-[12vw] sm:text-[10vw] lg:text-[7.5vw] xl:text-[8vw] font-nohemi tracking-tighter text-zinc-100 whitespace-nowrap select-none text-center lg:text-left">
-              get in
+              {t("getIn")}
             </h2>
           </div>
 
@@ -30,7 +34,7 @@ export default function Contact() {
           {/* Right Side: TOUCH */}
           <div className="leading-none">
             <h2 className="text-[12vw] sm:text-[10vw] lg:text-[7.5vw] xl:text-[8vw] font-nohemi tracking-tighter text-zinc-100 whitespace-nowrap select-none text-center lg:text-right">
-              touch
+              {t("touch")}
             </h2>
           </div>
         </div>
@@ -41,7 +45,7 @@ export default function Contact() {
         {/* Info Column */}
         <div className="flex flex-col gap-2 text-size-small max-w-full">
           <p className="text-zinc-100 break-all">
-            email:{" "}
+            {t("email")}:{" "}
             <a
               href="mailto:marticastanorodriguez@gmail.com"
               className="hover:text-zinc-400 transition-colors"
@@ -49,40 +53,38 @@ export default function Contact() {
               marticastanorodriguez@gmail.com
             </a>
           </p>
-          <p className="text-zinc-100">based in: Barcelona, Spain</p>
-          <p className="text-zinc-100">
-            available for: freelance projects & full-time
-          </p>
+          <p className="text-zinc-100">{t("basedIn")}</p>
+          <p className="text-zinc-100">{t("availableFor")}</p>
         </div>
 
         {/* Links Group */}
         <div className="flex gap-12 sm:gap-20 md:gap-32 text-size-small">
           {/* Pages Column */}
           <div className="flex flex-col gap-2">
-            <span className="text-zinc-500 mb-2">pages</span>
+            <span className="text-zinc-500 mb-2">{t("pages")}</span>
             <TransitionLink
               href="/"
               className="text-zinc-100 hover:text-zinc-400 transition-colors"
             >
-              home
+              {t("home")}
             </TransitionLink>
             <TransitionLink
               href="/about"
               className="text-zinc-100 hover:text-zinc-400 transition-colors"
             >
-              about
+              {tNavbar("about")}
             </TransitionLink>
             <TransitionLink
               href="/work"
               className="text-zinc-100 hover:text-zinc-400 transition-colors"
             >
-              work
+              {tNavbar("work")}
             </TransitionLink>
           </div>
 
           {/* Socials Column */}
           <div className="flex flex-col gap-2">
-            <span className="text-zinc-500 mb-2">socials</span>
+            <span className="text-zinc-500 mb-2">{t("socials")}</span>
             <a
               href="https://github.com/Kore29"
               target="_blank"

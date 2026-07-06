@@ -1,0 +1,87 @@
+{
+  "Navbar": {
+    "work": "work",
+    "about": "about me",
+    "startProject": "start a project"
+  },
+  "Home": {
+    "subtitle": "i build fullstack web applications, automate systems, and develop AI-powered software solutions."
+  },
+  "About": {
+    "title": "about me",
+    "phrase": "i'm Martí Castaño, a fullstack developer who loves creating projects that mix frontend, backend, and artificial intelligence. I'm always experimenting with new things: from building my own operating system with Arch Linux to tinkering with servers, home automation, and writing clean, efficient code.",
+    "approachTitle": "my approach to code",
+    "approachDesc": "i enjoy tackling challenges with creativity and efficiency, always aiming for clean, maintainable code. I'm particularly passionate about fullstack development, AI applications, and exploring innovative solutions in web and system programming.",
+    "downloadResume": "download resume",
+    "notCodingTitle": "when i'm not coding",
+    "notCodingDesc": "outside of coding, i love experimenting with home tech projects, tinkering with servers and home automation, and learning new tools just for fun. You'll always find me exploring new technologies or tweaking my custom Arch Linux installation."
+  },
+  "Experience": {
+    "title": "my experience",
+    "learnMore": "learn more...",
+    "independent": {
+      "company": "Courses and Certifications",
+      "role": "Independent Study",
+      "period": "Summer 2025",
+      "description": "Completed a total of 5 courses, covering UI design with Tailwind, frontend development with React, backend systems using Node.js, Express, and MongoDB, alongside AI and machine learning toolsets using Python."
+    },
+    "programame": {
+      "company": "ProgramaMe Final Contest Madrid",
+      "role": "National Finalist & Winner",
+      "period": "June 2025",
+      "description": "Reached the national final in Madrid, competing at a high level. Solved complex algorithmic challenges using efficient data structures, and won the special prize for being the fastest team to solve the first programming exercise."
+    },
+    "codewars": {
+      "company": "HP CodeWars Contest Barcelona",
+      "role": "Contestant",
+      "period": "March 2024",
+      "description": "Participated in the HP CodeWars competitive programming contest in Barcelona at the end of high school, visiting the HP offices and solving algorithmic problems in a collaborative team setting."
+    }
+  },
+  "Projects": {
+    "title": "selected work",
+    "categories": {
+      "all": "all",
+      "web": "web",
+      "systems": "systems",
+      "ai": "ai"
+    },
+    "detail": {
+      "category": "Category",
+      "technologies": "Technologies",
+      "repository": "Code Repository",
+      "viewGithub": "view on github",
+      "overview": "Project Overview"
+    },
+    "lattice": {
+      "title": "Lattice",
+      "category": "Smart map and navigation system for large-scale festivals and events.",
+      "description": "A platform designed so attendees at major festivals don't get lost and organizers can manage everything smoothly. It includes a fluid mobile app with an interactive map that guides users in real time with pedestrian routes, and a web dashboard for organizers as a control center with heatmaps to coordinate access efficiently."
+    },
+    "volta": {
+      "title": "Volta",
+      "category": "Appointment management and automatic WhatsApp reminder dispatch for businesses.",
+      "description": "A digital tool for local shops and businesses to manage calendars, clients, and services. It automatically sends WhatsApp reminders for appointments and features a legal check to ensure GDPR consent."
+    },
+    "iter-ecosystem": {
+      "title": "Iter Ecosystem",
+      "category": "Smart platform for organizing and evaluating educational workshops.",
+      "description": "An integrated system designed to automate school workshop organization. It automatically distributes students into classes and features AI speech recognition to evaluate skills, as well as computer vision to verify physical signatures on educational agreements."
+    },
+    "muvv": {
+      "title": "Muvv",
+      "category": "Real-time multiplayer exercise and fitness web application.",
+      "description": "A fitness game and social network where users work out and compete with friends. Utilizing webcam and pose tracking AI, it counts reps in real-time, supports virtual workout rooms, and offers global leaderboards."
+    }
+  },
+  "Contact": {
+    "getIn": "get in",
+    "touch": "touch",
+    "email": "email",
+    "basedIn": "based in: Barcelona, Spain",
+    "availableFor": "available for: freelance projects & full-time",
+    "pages": "pages",
+    "socials": "socials",
+    "home": "home"
+  }
+}
