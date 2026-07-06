@@ -5,15 +5,13 @@ import TransitionLink from "./TransitionLink";
 import { useLenis } from "lenis/react";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
-import { useTranslations, useLocale } from "next-intl";
-import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslations } from "next-intl";
 
 export default function Navbar() {
   const lenis = useLenis();
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const t = useTranslations("Navbar");
-  const locale = useLocale();
 
   // Auto-close menu on route change
   useEffect(() => {
@@ -79,8 +77,7 @@ export default function Navbar() {
             >
               {t("startProject")}
             </button>
-            <span className="text-zinc-700 select-none">|</span>
-            <LanguageSwitcher />
+
           </div>
 
           {/* Mobile Menu Toggle Button */}
@@ -123,12 +120,7 @@ export default function Navbar() {
           >
             {t("startProject")}
           </button>
-          <div className="pt-2 flex items-center justify-between border-t border-zinc-800/30">
-            <span className="text-zinc-500 text-size-small">
-              {locale === "es" ? "idioma" : "language"}
-            </span>
-            <LanguageSwitcher />
-          </div>
+
         </div>
       </div>
     </>

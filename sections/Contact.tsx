@@ -102,7 +102,9 @@ export default function Contact() {
               coursera
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/marti-casta%C3%B1o-rodriguez-77a54a341/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-zinc-100 hover:text-zinc-400 transition-colors"
             >
               linkedin

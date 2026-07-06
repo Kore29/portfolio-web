@@ -1,0 +1,87 @@
+{
+  "Navbar": {
+    "work": "projets",
+    "about": "à propos",
+    "startProject": "démarrer un projet"
+  },
+  "Home": {
+    "subtitle": "je développe des applications web fullstack, automatise des systèmes et crée des solutions logicielles basées sur l'intelligence artificielle."
+  },
+  "About": {
+    "title": "à propos de moi",
+    "phrase": "Je suis Martí Castaño, un développeur fullstack passionné par les projets qui mêlent frontend, backend et intelligence artificielle. Je suis constamment en train d'expérimenter de nouvelles choses — de la construction de mon propre système d'exploitation avec Arch Linux jusqu'au bricolage avec des serveurs, la domotique et l'écriture d'un code propre et efficace.",
+    "approachTitle": "mon approche du code",
+    "approachDesc": "j'aime relever les défis avec créativité et efficacité, en visant toujours un code propre et facile à maintenir. Je suis particulièrement passionné par le développement fullstack, les applications d'IA et l'exploration de solutions innovantes en programmation web et systèmes.",
+    "downloadResume": "télécharger le CV",
+    "notCodingTitle": "quand je ne code pas",
+    "notCodingDesc": "en dehors du code, j'adore expérimenter avec des projets tech maison, bricoler des serveurs et de la domotique, et apprendre de nouveaux outils juste pour le plaisir. Vous me trouverez toujours en train d'explorer de nouvelles technologies ou de peaufiner mon installation Arch Linux personnalisée."
+  },
+  "Experience": {
+    "title": "mon expérience",
+    "learnMore": "en savoir plus...",
+    "independent": {
+      "company": "Cours & Certifications",
+      "role": "Étude indépendante",
+      "period": "Été 2025",
+      "description": "J'ai complété 5 cours portant sur la conception d'interfaces avec Tailwind, le développement frontend avec React, les systèmes backend avec Node.js, Express et MongoDB, ainsi qu'une introduction à l'IA et au machine learning avec Python."
+    },
+    "programame": {
+      "company": "Finale Nationale ProgramaMe — Madrid",
+      "role": "Finaliste National & Lauréat",
+      "period": "Juin 2025",
+      "description": "J'ai atteint la finale nationale à Madrid en concourant au plus haut niveau. J'ai résolu des défis algorithmiques complexes à l'aide de structures de données efficaces et remporté le prix spécial pour avoir été l'équipe la plus rapide à résoudre le premier exercice."
+    },
+    "codewars": {
+      "company": "HP CodeWars Contest — Barcelone",
+      "role": "Participant",
+      "period": "Mars 2024",
+      "description": "J'ai participé au concours de programmation compétitive HP CodeWars à Barcelone, en visitant les bureaux d'HP et en résolvant des problèmes algorithmiques en équipe dans un environnement collaboratif."
+    }
+  },
+  "Projects": {
+    "title": "projets sélectionnés",
+    "categories": {
+      "all": "tous",
+      "web": "web",
+      "systems": "systèmes",
+      "ai": "ia"
+    },
+    "detail": {
+      "category": "Catégorie",
+      "technologies": "Technologies",
+      "repository": "Dépôt de code",
+      "viewGithub": "voir sur GitHub",
+      "overview": "Aperçu du projet"
+    },
+    "lattice": {
+      "title": "Lattice",
+      "category": "Système de cartographie et de navigation intelligente pour festivals et grands événements.",
+      "description": "Une plateforme conçue pour que les participants aux grands festivals ne se perdent pas et que les organisateurs puissent tout gérer sans encombre. Elle comprend une application mobile avec une carte interactive guidant les utilisateurs en temps réel, et un tableau de bord web avec des cartes de chaleur des zones les plus fréquentées."
+    },
+    "volta": {
+      "title": "Volta",
+      "category": "Gestion de rendez-vous et rappels automatiques par WhatsApp pour les entreprises.",
+      "description": "Un outil numérique pour que les commerces locaux et entreprises gèrent de façon centralisée leurs calendriers, clients et services. Il envoie automatiquement des rappels de rendez-vous par WhatsApp et intègre un système de vérification du consentement pour garantir la conformité au RGPD."
+    },
+    "iter-ecosystem": {
+      "title": "Iter Ecosystem",
+      "category": "Plateforme intelligente pour l'organisation et l'évaluation d'ateliers éducatifs.",
+      "description": "Un système complet pour automatiser l'organisation d'ateliers scolaires. Il répartit automatiquement les élèves dans les classes de façon optimale, évalue leurs compétences par reconnaissance vocale IA et vérifie par vision artificielle que les signatures sur les conventions éducatives imprimées sont correctes."
+    },
+    "muvv": {
+      "title": "Muvv",
+      "category": "Application web de fitness multijoueur en temps réel.",
+      "description": "Un jeu et réseau social axés sur le sport où les utilisateurs s'entraînent et rivalisent avec des amis depuis chez eux. Grâce à la webcam, le système reconnaît les mouvements du corps pour compter les répétitions de manière interactive. Il propose des salles virtuelles, des routines prédéfinies, un historique de progression et des classements mondiaux en temps réel."
+    }
+  },
+  "Contact": {
+    "getIn": "prenez",
+    "touch": "contact",
+    "email": "e-mail",
+    "basedIn": "basé à : Barcelone, Espagne",
+    "availableFor": "disponible pour : projets freelance & temps plein",
+    "pages": "pages",
+    "socials": "réseaux sociaux",
+    "home": "accueil"
+  }
+}

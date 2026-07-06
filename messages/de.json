@@ -1,0 +1,87 @@
+{
+  "Navbar": {
+    "work": "Projekte",
+    "about": "über mich",
+    "startProject": "Projekt starten"
+  },
+  "Home": {
+    "subtitle": "ich entwickle fullstack-Webanwendungen, automatisiere Systeme und baue KI-gestützte Softwarelösungen."
+  },
+  "About": {
+    "title": "über mich",
+    "phrase": "Ich bin Martí Castaño, ein Fullstack-Entwickler, der es liebt, Projekte zu schaffen, die Frontend, Backend und künstliche Intelligenz verbinden. Ich experimentiere ständig mit neuen Dingen — vom Aufbau meines eigenen Betriebssystems mit Arch Linux bis hin zum Tüfteln mit Servern, Heimautomatisierung und dem Schreiben von sauberem, effizientem Code.",
+    "approachTitle": "mein Ansatz beim Programmieren",
+    "approachDesc": "Ich löse Herausforderungen gerne mit Kreativität und Effizienz und strebe immer nach sauberem, wartbarem Code. Besonders leidenschaftlich bin ich beim Fullstack-Development, KI-Anwendungen und innovativen Lösungen in der Web- und Systemprogrammierung.",
+    "downloadResume": "Lebenslauf herunterladen",
+    "notCodingTitle": "wenn ich nicht programmiere",
+    "notCodingDesc": "Abseits der Programmierung experimentiere ich gerne mit Heim-Tech-Projekten, tüftele an Servern und Smart-Home-Systemen und lerne neue Tools einfach zum Spaß. Man findet mich immer beim Erkunden neuer Technologien oder beim Feintuning meiner individuellen Arch-Linux-Installation."
+  },
+  "Experience": {
+    "title": "meine Erfahrung",
+    "learnMore": "mehr erfahren...",
+    "independent": {
+      "company": "Kurse & Zertifizierungen",
+      "role": "Selbststudium",
+      "period": "Sommer 2025",
+      "description": "Ich absolvierte insgesamt 5 Kurse zu UI-Design mit Tailwind, Frontend-Entwicklung mit React, Backend-Systemen mit Node.js, Express und MongoDB sowie eine Einführung in KI und maschinelles Lernen mit Python."
+    },
+    "programame": {
+      "company": "ProgramaMe Bundesfinale — Madrid",
+      "role": "Nationaler Finalist & Gewinner",
+      "period": "Juni 2025",
+      "description": "Ich erreichte das Bundesfinale in Madrid und konkurrierte auf höchstem Niveau. Ich löste komplexe algorithmische Aufgaben mit effizienten Datenstrukturen und gewann den Sonderpreis als schnellstes Team bei der ersten Aufgabe."
+    },
+    "codewars": {
+      "company": "HP CodeWars Contest — Barcelona",
+      "role": "Teilnehmer",
+      "period": "März 2024",
+      "description": "Ich nahm am HP CodeWars Wettbewerb in Barcelona teil, besuchte die HP-Büros und löste algorithmische Aufgaben in einem kollaborativen Team-Umfeld."
+    }
+  },
+  "Projects": {
+    "title": "ausgewählte Projekte",
+    "categories": {
+      "all": "alle",
+      "web": "web",
+      "systems": "systeme",
+      "ai": "ki"
+    },
+    "detail": {
+      "category": "Kategorie",
+      "technologies": "Technologien",
+      "repository": "Code-Repository",
+      "viewGithub": "auf GitHub ansehen",
+      "overview": "Projektübersicht"
+    },
+    "lattice": {
+      "title": "Lattice",
+      "category": "Intelligentes Karten- und Navigationssystem für Großveranstaltungen und Festivals.",
+      "description": "Eine Plattform, damit Besucher großer Festivals den Überblick behalten und Veranstalter alles reibungslos managen können. Sie umfasst eine mobile App mit interaktiver Karte zur Echtzeit-Navigation und ein Web-Dashboard mit Heatmaps der meistbesuchten Bereiche."
+    },
+    "volta": {
+      "title": "Volta",
+      "category": "Terminverwaltung mit automatischen WhatsApp-Erinnerungen für Unternehmen.",
+      "description": "Ein digitales Tool für Einzelhandel und Unternehmen zur zentralen Verwaltung von Kalendern, Kunden und Dienstleistungen. Es versendet automatisch WhatsApp-Erinnerungen für Termine und prüft rechtlich die Einwilligung der Kunden zur DSGVO-konformen Kommunikation."
+    },
+    "iter-ecosystem": {
+      "title": "Iter Ecosystem",
+      "category": "Intelligente Plattform zur Organisation und Bewertung von Bildungsworkshops.",
+      "description": "Ein umfassendes System zur Automatisierung der Schulworkshop-Organisation. Es verteilt Schüler optimal auf Klassen, bewertet Kompetenzen per KI-Spracherkennung und prüft mittels Computer Vision die Unterschriften auf gedruckten Bildungsverträgen."
+    },
+    "muvv": {
+      "title": "Muvv",
+      "category": "Echtzeit-Multiplayer-Fitness-Webanwendung.",
+      "description": "Ein Fitness-Spiel und soziales Netzwerk, bei dem Nutzer von zu Hause aus trainieren und mit Freunden wetteifern. Per Webcam erkennt das System Körperbewegungen und zählt Wiederholungen interaktiv. Virtuelle Trainingsräume, vordefinierte Routinen, Fortschrittshistorie und globale Ranglisten in Echtzeit inklusive."
+    }
+  },
+  "Contact": {
+    "getIn": "nimm",
+    "touch": "Kontakt auf",
+    "email": "E-Mail",
+    "basedIn": "ansässig in: Barcelona, Spanien",
+    "availableFor": "verfügbar für: Freelance-Projekte & Vollzeit",
+    "pages": "Seiten",
+    "socials": "Soziale Medien",
+    "home": "Start"
+  }
+}
