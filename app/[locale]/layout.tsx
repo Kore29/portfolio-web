@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     images: [
       {
-        url: `${siteUrl}/og-image.png`,
+        url: `${siteUrl}/es/opengraph-image`,
         width: 1200,
         height: 630,
         alt: "Martí Castaño — Fullstack & AI Software Engineer",
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     title: "Martí Castaño | Fullstack Developer & AI",
     description:
       "Fullstack developer specialized in building web applications, systems automation, and AI-powered software solutions.",
-    images: [`${siteUrl}/og-image.png`],
+    images: [`${siteUrl}/es/opengraph-image`],
   },
 };
 
