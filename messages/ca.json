@@ -1,20 +1,20 @@
 {
   "Navbar": {
     "work": "projectes",
-    "about": "sobre mi",
+    "about": "sobre mí",
     "startProject": "iniciar projecte"
   },
   "Home": {
     "subtitle": "desenvolupo aplicacions web fullstack, automatitzo sistemes i creo solucions de programari basades en intel·ligència artificial."
   },
   "About": {
-    "title": "sobre mi",
-    "phrase": "Soc en Martí Castaño, un desenvolupador fullstack al qual li encanta crear projectes que barrejen frontend, backend i intel·ligència artificial. Sempre estic experimentant amb coses noves: des de construir el meu propi sistema operatiu amb Arch Linux fins a trastejat amb servidors, domòtica i escriure codi net i eficient.",
+    "title": "sobre mí",
+    "phrase": "Soc en Martí Castaño, un desenvolupador fullstack al qual li encanta crear projectes que barregin frontend, backend i intel·ligència artificial. Sempre estic experimentant amb coses noves: des de construir el meu propi sistema operatiu amb Arch Linux fins a trastejar amb servidors, domòtica i escriure codi net i eficient.",
     "approachTitle": "el meu enfocament del codi",
-    "approachDesc": "m'agrada afrontar els reptes amb creativitat i eficiència, buscant sempre un codi net i fàcil de mantenir. M'apassiona especialment el desenvolupament fullstack, les aplicacions d'IA i explorar solucions innovadores en programació web i de sistemes.",
+    "approachDesc": "M'agrada afrontar els reptes amb creativitat i eficiència, buscant sempre un codi net i fàcil de mantenir. M'apassiona especialment el desenvolupament fullstack, les aplicacions d'IA i explorar solucions innovadores en programació web i de sistemes.",
     "downloadResume": "descarregar currículum",
     "notCodingTitle": "quan no estic programant",
-    "notCodingDesc": "fora de la programació, m'encanta experimentar amb projectes tecnològics casolans, trastejat amb servidors i domòtica, i aprendre noves eines només per diversió. Sempre em trobaràs explorant noves tecnologies o retocant la meva instal·lació personalitzada d'Arch Linux."
+    "notCodingDesc": "Fora de la programació, m'encanta experimentar amb projectes tecnològics casolans, trastejar amb servidors i domòtica, i aprendre noves eines només per diversió. Sempre em trobaràs explorant noves tecnologies o retocant la meva instal·lació personalitzada d'Arch Linux."
   },
   "Experience": {
     "title": "la meva experiència",

@@ -51,6 +51,11 @@ export const metadata: Metadata = {
   title: "Martí Castaño | Fullstack Developer & AI",
   description:
     "Martí Castaño's professional portfolio. Fullstack developer specialized in building web applications, systems automation, and AI-powered solutions.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   openGraph: {
     title: "Martí Castaño | Fullstack Developer & AI",
     description:
