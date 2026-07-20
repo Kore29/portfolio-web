@@ -8,6 +8,7 @@ export default function CustomCursor() {
   const pathname = usePathname();
   const cursorRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
+  const [cursorText, setCursorText] = useState("see more");
 
   // Reset hover state when navigation occurs
   useEffect(() => {
@@ -46,8 +47,15 @@ export default function CustomCursor() {
 
     window.addEventListener("mousemove", onMouseMove);
 
-    // Handle hover states on elements with data-cursor="project"
-    const handleMouseEnter = () => {
+    const handleMouseEnter = (e: Event) => {
+      const target = e.currentTarget as HTMLElement;
+      const customValue = target.getAttribute("data-cursor");
+      if (customValue && customValue !== "project" && customValue !== "true") {
+        setCursorText(customValue);
+      } else {
+        setCursorText("see more");
+      }
+
       setIsHovered(true);
       gsap.to(cursor, {
         width: 144,
@@ -67,11 +75,16 @@ export default function CustomCursor() {
       });
     };
 
+    const activeTargets = new Set<Element>();
+
     const updateListeners = () => {
-      const targets = document.querySelectorAll('[data-cursor="project"]');
+      const targets = document.querySelectorAll("[data-cursor]");
       targets.forEach((target) => {
-        target.addEventListener("mouseenter", handleMouseEnter);
-        target.addEventListener("mouseleave", handleMouseLeave);
+        if (!activeTargets.has(target)) {
+          activeTargets.add(target);
+          target.addEventListener("mouseenter", handleMouseEnter);
+          target.addEventListener("mouseleave", handleMouseLeave);
+        }
       });
     };
 
@@ -85,8 +98,7 @@ export default function CustomCursor() {
     return () => {
       window.removeEventListener("mousemove", onMouseMove);
       observer.disconnect();
-      const targets = document.querySelectorAll('[data-cursor="project"]');
-      targets.forEach((target) => {
+      activeTargets.forEach((target) => {
         target.removeEventListener("mouseenter", handleMouseEnter);
         target.removeEventListener("mouseleave", handleMouseLeave);
       });
@@ -105,7 +117,7 @@ export default function CustomCursor() {
           isHovered ? "opacity-100 scale-100" : "opacity-0 scale-50"
         }`}
       >
-        see more
+        {cursorText}
       </span>
     </div>
   );

@@ -82,6 +82,16 @@
     "availableFor": "available for: freelance & full-time",
     "pages": "pages",
     "socials": "socials",
-    "home": "home"
+    "home": "home",
+    "sendMessageTitle": "send a direct message",
+    "nameLabel": "your name",
+    "emailLabel": "your email",
+    "subjectLabel": "subject / reason",
+    "messageLabel": "message",
+    "sendButton": "send message",
+    "sendingButton": "sending...",
+    "successToast": "message sent successfully!",
+    "errorToast": "failed to send message. please try again.",
+    "sendDirectMessage": "send a direct message →"
   }
 }

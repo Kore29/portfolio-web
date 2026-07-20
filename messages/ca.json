@@ -82,6 +82,16 @@
     "availableFor": "disponible per a: projectes freelance i temps complet",
     "pages": "pàgines",
     "socials": "xarxes socials",
-    "home": "inici"
+    "home": "inici",
+    "sendMessageTitle": "enviar un missatge directe",
+    "nameLabel": "el teu nom",
+    "emailLabel": "el teu correu electrònic",
+    "subjectLabel": "assumpte / motiu",
+    "messageLabel": "missatge",
+    "sendButton": "enviar missatge",
+    "sendingButton": "enviant...",
+    "successToast": "missatge enviat amb èxit!",
+    "errorToast": "error en enviar el missatge. si us plau torna-ho a provar.",
+    "sendDirectMessage": "enviar un missatge directe →"
   }
 }

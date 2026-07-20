@@ -3,8 +3,9 @@ FROM node:22-alpine
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
-# Enable pnpm
+# Enable pnpm and set isolated store location
 RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN pnpm config set store-dir /root/.pnpm-store
 
 # Install dependencies first (for docker cache layer)
 COPY package.json pnpm-lock.yaml ./
@@ -20,4 +21,4 @@ ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 
 # Run development server
-CMD ["pnpm", "dev"]
+CMD ["pnpm", "dev", "--hostname", "0.0.0.0"]

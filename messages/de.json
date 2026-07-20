@@ -82,6 +82,16 @@
     "availableFor": "verfügbar für: Freelance-Projekte & Vollzeit",
     "pages": "Seiten",
     "socials": "Soziale Medien",
-    "home": "Start"
+    "home": "Start",
+    "sendMessageTitle": "direkte Nachricht senden",
+    "nameLabel": "Ihr Name",
+    "emailLabel": "Ihre E-Mail",
+    "subjectLabel": "Betreff / Grund",
+    "messageLabel": "Nachricht",
+    "sendButton": "Nachricht senden",
+    "sendingButton": "wird gesendet...",
+    "successToast": "Nachricht erfolgreich gesendet!",
+    "errorToast": "Fehler beim Senden der Nachricht. Bitte versuche es erneut.",
+    "sendDirectMessage": "direkte Nachricht senden →"
   }
 }

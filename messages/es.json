@@ -82,6 +82,16 @@
     "availableFor": "disponible para: proyectos freelance y tiempo completo",
     "pages": "páginas",
     "socials": "redes sociales",
-    "home": "inicio"
+    "home": "inicio",
+    "sendMessageTitle": "enviar un mensaje directo",
+    "nameLabel": "tu nombre",
+    "emailLabel": "tu correo electrónico",
+    "subjectLabel": "asunto / motivo",
+    "messageLabel": "mensaje",
+    "sendButton": "enviar mensaje",
+    "sendingButton": "enviando...",
+    "successToast": "¡mensaje enviado con éxito!",
+    "errorToast": "error al enviar mensaje. por favor inténtalo de nuevo.",
+    "sendDirectMessage": "enviar un mensaje directo →"
   }
 }

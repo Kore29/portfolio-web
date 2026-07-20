@@ -51,6 +51,19 @@ export const metadata: Metadata = {
   title: "Martí Castaño | Fullstack Developer & AI",
   description:
     "Martí Castaño's professional portfolio. Fullstack developer specialized in building web applications, systems automation, and AI-powered solutions.",
+  openGraph: {
+    title: "Martí Castaño | Fullstack Developer & AI",
+    description:
+      "Fullstack developer specialized in building web applications, systems automation, and AI-powered software solutions.",
+    siteName: "Martí Castaño Portfolio",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Martí Castaño | Fullstack Developer & AI",
+    description:
+      "Fullstack developer specialized in building web applications, systems automation, and AI-powered software solutions.",
+  },
 };
 
 // Generar rutas estáticas para compilación

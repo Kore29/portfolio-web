@@ -16,6 +16,7 @@ build
 
 # Package manager logs & config
 .npm
+.pnpm-store
 *-debug.log*
 *-error.log*
 
