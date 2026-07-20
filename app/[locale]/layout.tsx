@@ -47,7 +47,10 @@ const nohemi = localFont({
   variable: "--font-nohemi",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://portfolio.kore29.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Martí Castaño | Fullstack Developer & AI",
   description:
     "Martí Castaño's professional portfolio. Fullstack developer specialized in building web applications, systems automation, and AI-powered solutions.",
@@ -66,12 +69,22 @@ export const metadata: Metadata = {
       "Fullstack developer specialized in building web applications, systems automation, and AI-powered software solutions.",
     siteName: "Martí Castaño Portfolio",
     type: "website",
+    url: siteUrl,
+    images: [
+      {
+        url: "/es/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Martí Castaño — Fullstack & AI Software Engineer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Martí Castaño | Fullstack Developer & AI",
     description:
       "Fullstack developer specialized in building web applications, systems automation, and AI-powered software solutions.",
+    images: ["/es/opengraph-image"],
   },
 };
 
